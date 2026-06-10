@@ -12,3 +12,6 @@ Built a Power BI dashboard tracking 5 KPIs.
 
 ## Author
 Parvathi S
+
+## Dashboard Preview
+![Sales Dashboard](sales_dashboard.png)

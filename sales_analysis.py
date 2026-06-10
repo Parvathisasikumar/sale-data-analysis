@@ -13,7 +13,7 @@ products = ['Electronics', 'Clothing', 'Food', 'Furniture', 'Sports']
 
 df = pd.DataFrame({
     'order_id':    range(1, n + 1),
-    'date':        pd.date_range('2022-01-01', periods=n, freq='1H'),
+    'date':        pd.date_range('2022-01-01', periods=n, freq='1h'),
     'region':      np.random.choice(regions, n),
     'product':     np.random.choice(products, n),
     'quantity':    np.random.randint(1, 20, n).astype(float),
@@ -113,8 +113,8 @@ axes[1, 1].set_ylabel('Number of Customers')
 plt.tight_layout()
 plt.savefig('sales_dashboard.png', dpi=150, bbox_inches='tight')
 plt.show()
-print("\n✅ Dashboard saved as sales_dashboard.png")
+print("\nDashboard saved as sales_dashboard.png")
 
 # ── 7. Export Cleaned Data ────────────────────────────────
 df.to_csv('sales_data_cleaned.csv', index=False)
-print("✅ Cleaned data exported to sales_data_cleaned.csv")
+print(" Cleaned data exported to sales_data_cleaned.csv")
